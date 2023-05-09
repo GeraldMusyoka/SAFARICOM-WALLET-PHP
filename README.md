@@ -10,11 +10,11 @@ The Modules for the project include:
 5. Customer Registration
 6. Transaction List
 
-Technology Used:
+# Technology Used:
 1. MPESA DARAJA API PAYMENT GATEWAY
 
-Language Used
+# Language Used
 PHP, HTML, CSS, JS
 
-Client 
+# Client 
 LEOWA ASSOCIATES
