@@ -1,0 +1,183 @@
+[2023-01-31 16:33:12] local.INFO: B2C endpoint hit
+[2023-01-31 16:33:12] local.INFO: array (
+  'Result' =>
+  array (
+    'ResultType' => 0,
+    'ResultCode' => 2,
+    'ResultDesc' => 'Declined due to limit rule: less than the minimum transaction amount.',
+    'OriginatorConversationID' => '5988-233617854-1',
+    'ConversationID' => 'AG_20230131_202051a6c4abe68029a0',
+    'TransactionID' => 'RAV5LCJGAR',
+    'ReferenceData' =>
+    array (
+      'ReferenceItem' =>
+      array (
+        'Key' => 'QueueTimeoutURL',
+        'Value' => 'http://internalapi.safaricom.co.ke/mpesa/b2cresults/v1/submit',
+      ),
+    ),
+  ),
+)
+
+[2023-02-01 22:18:23] local.INFO: B2C endpoint hit
+[2023-02-01 22:18:23] local.INFO: array (
+  'Result' =>
+  array (
+    'ResultType' => 0,
+    'ResultCode' => 0,
+    'ResultDesc' => 'The service request is processed successfully.',
+    'OriginatorConversationID' => '119410-241746653-1',
+    'ConversationID' => 'AG_20230201_2070404a8c4088e6b432',
+    'TransactionID' => 'RB11P22GID',
+    'ResultParameters' =>
+    array (
+      'ResultParameter' =>
+      array (
+        0 =>
+        array (
+          'Key' => 'TransactionAmount',
+          'Value' => 10,
+        ),
+        1 =>
+        array (
+          'Key' => 'TransactionReceipt',
+          'Value' => 'RB11P22GID',
+        ),
+        2 =>
+        array (
+          'Key' => 'ReceiverPartyPublicName',
+          'Value' => '254720768136 - GERALD MUSYOKA KALONZO',
+        ),
+        3 =>
+        array (
+          'Key' => 'TransactionCompletedDateTime',
+          'Value' => '01.02.2023 22:18:01',
+        ),
+        4 =>
+        array (
+          'Key' => 'B2CUtilityAccountAvailableFunds',
+          'Value' => 846.51,
+        ),
+        5 =>
+        array (
+          'Key' => 'B2CWorkingAccountAvailableFunds',
+          'Value' => 0.6,
+        ),
+        6 =>
+        array (
+          'Key' => 'B2CRecipientIsRegisteredCustomer',
+          'Value' => 'Y',
+        ),
+        7 =>
+        array (
+          'Key' => 'B2CChargesPaidAccountAvailableFunds',
+          'Value' => 0.0,
+        ),
+      ),
+    ),
+    'ReferenceData' =>
+    array (
+      'ReferenceItem' =>
+      array (
+        'Key' => 'QueueTimeoutURL',
+        'Value' => 'http://internalapi.safaricom.co.ke/mpesa/b2cresults/v1/submit',
+      ),
+    ),
+  ),
+)
+
+// Extract the values 
+$conversationID = $requestData['Result']['ConversationID'];
+$transactionID = $requestData['Result']['TransactionID'];
+$resultCode = $requestData['Result']['ResultCode'];
+$resultDesc = $requestData['Result']['ResultDesc'];
+
+2023-05-05 02:42:03 Response: 
+{"Result":{
+        "ResultType":0,
+        "ResultCode":2001,
+        "ResultDesc":"The initiator information is invalid.",
+        "OriginatorConversationID":"25514-40894667-1",
+        "ConversationID":"AG_20230505_202068635fa6cfffdf1a",
+        "TransactionID":"RE58QWW8S2",
+        "ReferenceData":{
+            "ReferenceItem":{
+                "Key":"QueueTimeoutURL",
+                "Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"
+            }
+        }
+    }
+}
+
+
+2023-05-05 03:03:56 Response: {"Result":{"ResultType":0,"ResultCode":2001,"ResultDesc":"The initiator information is invalid.","OriginatorConversationID":"7252-60004336-1","ConversationID":"AG_20230505_204033d59eb0d5ee2f2f","TransactionID":"RE57QX5MIN","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-05 03:07:09 Response: {"Result":{"ResultType":0,"ResultCode":2001,"ResultDesc":"The initiator information is invalid.","OriginatorConversationID":"41899-39076486-1","ConversationID":"AG_20230505_2010610de3ecfdb024b6","TransactionID":"RE52QX7MWW","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-05 03:09:42 Response: {"Result":{"ResultType":0,"ResultCode":2001,"ResultDesc":"The initiator information is invalid.","OriginatorConversationID":"7341-38854990-1","ConversationID":"AG_20230505_20406cd6ddb415360724","TransactionID":"RE50QX985E","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-05 03:14:21 Response: {"Result":{"ResultType":0,"ResultCode":8006,"ResultDesc":"The security credential is locked.","OriginatorConversationID":"7333-38860505-1","ConversationID":"AG_20230505_204011a0471db54f5243","TransactionID":"RE54QXCORM","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-05 03:16:07 Response: {"Result":{"ResultType":0,"ResultCode":8006,"ResultDesc":"The security credential is locked.","OriginatorConversationID":"19185-38522240-1","ConversationID":"AG_20230505_20702c4a5a4e32b13a64","TransactionID":"RE52QXE49G","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-05 03:18:06 Response: {"Result":{"ResultType":0,"ResultCode":8006,"ResultDesc":"The security credential is locked.","OriginatorConversationID":"39324-165462796-1","ConversationID":"AG_20230505_20302afa62d5607ce547","TransactionID":"RE56QXFH0K","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-05 10:29:40 Response: {"Result":{"ResultType":0,"ResultCode":8006,"ResultDesc":"The security credential is locked.","OriginatorConversationID":"7346-40061944-1","ConversationID":"AG_20230505_2060221432bdb2b2a485","TransactionID":"RE54RXLBX4","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+
+2023-05-05 10:44:49 Response: {"Result":{"ResultType":0,"ResultCode":8006,"ResultDesc":"The security credential is locked.","OriginatorConversationID":"7346-40117384-1","ConversationID":"AG_20230505_201027a746d74525f343","TransactionID":"RE51RZ92QH","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+
+2023-05-05 11:25:26 Response: {
+"Result":{
+    "ResultType":0,
+    "ResultCode":0,
+    "ResultDesc":"The service request is processed successfully.",
+    "OriginatorConversationID":"3616-40570704-1",
+    "ConversationID":"AG_20230505_206039aca32f0420e8d9",
+    "TransactionID":"RE53S3ISER",
+    "ResultParameters":{
+        "ResultParameter":[
+            {
+                "Key":"TransactionAmount",
+                "Value":10
+            },
+            {
+                "Key":"TransactionReceipt",
+                "Value":"RE53S3ISER"
+            },
+            {
+                "Key":"ReceiverPartyPublicName",
+                "Value":"254720768136 - GERALD MUSYOKA KALONZO"
+            },
+            {                                                   
+                "Key":"TransactionCompletedDateTime",
+                "Value":"05.05.2023 14:25:25"
+            },
+            {
+                "Key":"B2CUtilityAccountAvailableFunds",
+                "Value":35776.169999999998253770172595977783203125
+            },
+            {
+                "Key":"B2CWorkingAccountAvailableFunds",
+                "Value":0
+            },
+            {
+                "Key":"B2CRecipientIsRegisteredCustomer",
+                "Value":"Y"
+            },
+            {
+                "Key":"B2CChargesPaidAccountAvailableFunds",
+                "Value":0
+            }
+        ]
+    },
+    "ReferenceData":{
+        "ReferenceItem":{
+            "Key":"QueueTimeoutURL",
+            "Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}
+        }
+    }
+}
+2023-05-05 12:55:43 Response: {"Result":{"ResultType":0,"ResultCode":0,"ResultDesc":"The service request is processed successfully.","OriginatorConversationID":"30563-163485188-1","ConversationID":"AG_20230505_2020275be50360c9f52b","TransactionID":"RE56SD1342","ResultParameters":{"ResultParameter":[{"Key":"TransactionAmount","Value":10},{"Key":"TransactionReceipt","Value":"RE56SD1342"},{"Key":"ReceiverPartyPublicName","Value":"254720768136 - GERALD MUSYOKA KALONZO"},{"Key":"TransactionCompletedDateTime","Value":"05.05.2023 15:55:42"},{"Key":"B2CUtilityAccountAvailableFunds","Value":35766.169999999998253770172595977783203125},{"Key":"B2CWorkingAccountAvailableFunds","Value":0},{"Key":"B2CRecipientIsRegisteredCustomer","Value":"Y"},{"Key":"B2CChargesPaidAccountAvailableFunds","Value":0}]},"ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-05 13:16:10 Response: {"Result":{"ResultType":0,"ResultCode":0,"ResultDesc":"The service request is processed successfully.","OriginatorConversationID":"25512-42900471-1","ConversationID":"AG_20230505_20407da3649947b7e8a7","TransactionID":"RE56SF8W4E","ResultParameters":{"ResultParameter":[{"Key":"TransactionAmount","Value":10},{"Key":"TransactionReceipt","Value":"RE56SF8W4E"},{"Key":"ReceiverPartyPublicName","Value":"254720768136 - GERALD MUSYOKA KALONZO"},{"Key":"TransactionCompletedDateTime","Value":"05.05.2023 16:16:09"},{"Key":"B2CUtilityAccountAvailableFunds","Value":35756.169999999998253770172595977783203125},{"Key":"B2CWorkingAccountAvailableFunds","Value":0},{"Key":"B2CRecipientIsRegisteredCustomer","Value":"Y"},{"Key":"B2CChargesPaidAccountAvailableFunds","Value":0}]},"ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+
+2023-05-06 08:07:28 Response: {"Result":{"ResultType":0,"ResultCode":0,"ResultDesc":"The service request is processed successfully.","OriginatorConversationID":"84255-5942969-1","ConversationID":"AG_20230506_2020727a677d5341a034","TransactionID":"RE66UJVQUU","ResultParameters":{"ResultParameter":[{"Key":"TransactionAmount","Value":10},{"Key":"TransactionReceipt","Value":"RE66UJVQUU"},{"Key":"ReceiverPartyPublicName","Value":"254701313538 - ROSE VESEL"},{"Key":"TransactionCompletedDateTime","Value":"06.05.2023 11:07:27"},{"Key":"B2CUtilityAccountAvailableFunds","Value":35746.169999999998253770172595977783203125},{"Key":"B2CWorkingAccountAvailableFunds","Value":0},{"Key":"B2CRecipientIsRegisteredCustomer","Value":"Y"},{"Key":"B2CChargesPaidAccountAvailableFunds","Value":0}]},"ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-06 08:07:30 Response: {"Result":{"ResultType":0,"ResultCode":2,"ResultDesc":"Declined due to limit rule: less than the minimum transaction amount.","OriginatorConversationID":"22516-45883024-1","ConversationID":"AG_20230506_204042340c9916b3fcd7","TransactionID":"RE66UJW0SW","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-06 08:19:25 Response: {"Result":{"ResultType":0,"ResultCode":2,"ResultDesc":"Declined due to limit rule: less than the minimum transaction amount.","OriginatorConversationID":"3614-43963704-1","ConversationID":"AG_20230506_203031b8bbb72bb71a82","TransactionID":"RE62UL27XE","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-06 08:19:27 Response: {"Result":{"ResultType":0,"ResultCode":2,"ResultDesc":"Declined due to limit rule: less than the minimum transaction amount.","OriginatorConversationID":"25513-46019148-1","ConversationID":"AG_20230506_2010778031065cf79d53","TransactionID":"RE60UL21DS","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+
+2023-05-06 08:26:50 Response: {"Result":{"ResultType":0,"ResultCode":0,"ResultDesc":"The service request is processed successfully.","OriginatorConversationID":"70244-60409954-1","ConversationID":"AG_20230506_204058363e21a236844b","TransactionID":"RE65ULS2OF","ResultParameters":{"ResultParameter":[{"Key":"TransactionAmount","Value":10},{"Key":"TransactionReceipt","Value":"RE65ULS2OF"},{"Key":"ReceiverPartyPublicName","Value":"254701313538 - ROSE VESEL"},{"Key":"TransactionCompletedDateTime","Value":"06.05.2023 11:26:49"},{"Key":"B2CUtilityAccountAvailableFunds","Value":35736.169999999998253770172595977783203125},{"Key":"B2CWorkingAccountAvailableFunds","Value":0},{"Key":"B2CRecipientIsRegisteredCustomer","Value":"Y"},{"Key":"B2CChargesPaidAccountAvailableFunds","Value":0}]},"ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}
+2023-05-06 08:26:52 Response: {"Result":{"ResultType":0,"ResultCode":2,"ResultDesc":"Declined due to limit rule: less than the minimum transaction amount.","OriginatorConversationID":"19190-43634631-1","ConversationID":"AG_20230506_20501f0721755ebc5450","TransactionID":"RE63ULS9PP","ReferenceData":{"ReferenceItem":{"Key":"QueueTimeoutURL","Value":"http:\/\/internalapi.safaricom.co.ke\/mpesa\/b2cresults\/v1\/submit"}}}}

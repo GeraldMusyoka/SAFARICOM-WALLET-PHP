@@ -1,0 +1,5 @@
+2023-05-04 10:56:27 Response: 
+2023-05-04 11:07:54 Response: Array
+2023-05-04 11:18:27 Response: Array
+2023-05-04 11:24:46 Response: {"Body":{"stkCallback":{"MerchantRequestID":"25492-38313961-1","CheckoutRequestID":"ws_CO_04052023142432691720768136","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1},{"Name":"MpesaReceiptNumber","Value":"RE47P6AAF1"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20230504142445},{"Name":"PhoneNumber","Value":254720768136}]}}}}
+2023-05-04 11:31:56 Response: {"Body":{"stkCallback":{"MerchantRequestID":"120600-159231032-1","CheckoutRequestID":"ws_CO_04052023143140976720768136","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1},{"Name":"MpesaReceiptNumber","Value":"RE42P70140"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20230504143155},{"Name":"PhoneNumber","Value":254720768136}]}}}}

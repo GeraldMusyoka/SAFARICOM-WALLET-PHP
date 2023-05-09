@@ -1,0 +1,16 @@
+{
+    "name": "james/leowa_wallet",
+    "authors": [
+        {
+            "name": "GeraldMusyoka",
+            "email": "geraldmusyoka7@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    }
+}
