@@ -9,7 +9,7 @@ class Database
     public $connection;
     public $statement;
 
-    public function __construct($config, $username = 'wateregm_wateregm', $password = 'waterhub@2022')
+    public function __construct($config, $username = 'dbuser', $password = 'dbpassword')
     {
         $dsn = 'mysql:' . http_build_query($config, '', ';');
 
